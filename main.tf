@@ -13,7 +13,7 @@ provider "spotify" {
 
 resource "spotify_playlist" "playlist" {
   name        = "hbokh's Terraform Playlist"
-  description = "[WIP] Robots and 80's rarities - this playlist is managed by Terraform."
+  description = "Robot related tracks, mixed with 80's rarities // This playlist is managed by Terraform."
   public      = true
 
   tracks = [
@@ -27,6 +27,7 @@ resource "spotify_playlist" "playlist" {
     data.spotify_track.bananarama.id,
     data.spotify_search_track.by_kraftwerk.tracks[0].id,
     data.spotify_search_track.by_royksopp.tracks[0].id,
+    data.spotify_search_track.by_styx.tracks[0].id,
   ]
 }
 
@@ -57,7 +58,7 @@ data "spotify_track" "simple_minds" {
   url = "https://open.spotify.com/track/3GRyWgNPX5rBdh0VQctl5P?si=8ac81a32dfad4a6f"
 }
 
-# Track: B.B. & Q. Bancd - Starlette (1981)
+# Track: B.B. & Q. Band - Starlette (1981)
 data "spotify_track" "bbq_band" {
   url = "https://open.spotify.com/track/2LhBqodFdzWIGagvryATNW?si=14934deb51244e53"
 }
@@ -79,14 +80,21 @@ data "spotify_search_track" "by_kraftwerk" {
 }
 
 data "spotify_search_track" "by_royksopp" {
-  artists = ["royksopp"]
+  artists = ["Royksopp"]
   #album   = ""
   name = "The Girl and the Robot"
+}
+
+data "spotify_search_track" "by_styx" {
+  artists = ["Styx"]
+  #album   = ""
+  name = "Mr. Roboto"
 }
 
 output "tracks" {
   value = [
     data.spotify_search_track.by_kraftwerk.tracks,
     data.spotify_search_track.by_royksopp.tracks,
+    data.spotify_search_track.by_styx.tracks,
   ]
 }
