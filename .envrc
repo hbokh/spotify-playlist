@@ -1,0 +1,1 @@
+export SPOTIFY_CLIENT_REDIRECT_URI=http://localhost:27228/spotify_callback
