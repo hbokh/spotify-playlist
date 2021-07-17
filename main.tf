@@ -13,7 +13,7 @@ provider "spotify" {
 
 resource "spotify_playlist" "playlist" {
   name        = "hbokh's Terraform Playlist"
-  description = "[WIP] Robots and 80's rarities - playlist was created by Terraform"
+  description = "[WIP] Robots and 80's rarities - this playlist is managed by Terraform."
   public      = true
 
   tracks = [
