@@ -1,12 +1,14 @@
 # Spotify Playlist with Terraform
 
-Spotify playlist: <https://open.spotify.com/playlist/0oRjEbePbpHsguBg00TdET>
-
-## Purpose
-
 Create a playlist using various provided options, like `spotify_track` and `spotify_search_track`.
 
 I've added some robot 🤖 related tracks, accompanied by eighties rarity tracks.
+
+Spotify playlist: <https://open.spotify.com/playlist/0oRjEbePbpHsguBg00TdET>
+
+## Set the API key
+
+Remember to set / replace the `spotify_api_key` in file `terraform.tfvars` **every time** the Spotify authorization proxy server aka Docker container `conradludgate/spotify-auth-proxy` is started!!
 
 ## Reference
 

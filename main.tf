@@ -24,41 +24,52 @@ resource "spotify_playlist" "playlist" {
     data.spotify_track.simple_minds.id,
     data.spotify_track.bbq_band.id,
     data.spotify_track.robyn.id,
+    data.spotify_track.bananarama.id,
     data.spotify_search_track.by_kraftwerk.tracks[0].id,
     data.spotify_search_track.by_royksopp.tracks[0].id,
   ]
 }
 
-# Track:  Siouxsie and the Banshees - Israel
+# Track:  Siouxsie and the Banshees - Israel (1980)
 data "spotify_track" "siouxie" {
   spotify_id = "6jLmHKaHW6Cy37Gp5eTD3i"
   # url = "https://open.spotify.com/track/6jLmHKaHW6Cy37Gp5eTD3i?si=e6f23e76f11d4711"
 }
 
+# Track: Aneka - Japanese Boy (1981)
 data "spotify_track" "aneka" {
   url = "https://open.spotify.com/track/4VmmNHz5nigftA0B3GR0M5?si=7b1f156f9e58413a"
 }
 
+# Track: Hot Cold - Love is like a Game (1985)
 data "spotify_track" "hot_cold" {
   url = "https://open.spotify.com/track/4JXj2LwjTBmp1mzYORNuAU?si=ccd1daecc3bc4888"
 }
 
-# Track: Lio - Amoureux Solitaires
+# Track: Lio - Amoureux Solitaires (1980)
 data "spotify_track" "lio" {
   spotify_id = "0ZJgIjGJdYzgb03LSH09Gx"
   # url = "https://open.spotify.com/track/0ZJgIjGJdYzgb03LSH09Gx?si=d383776523cd4760"
 }
 
+# Track: Simple Minds - I Travel (1980)
 data "spotify_track" "simple_minds" {
   url = "https://open.spotify.com/track/3GRyWgNPX5rBdh0VQctl5P?si=8ac81a32dfad4a6f"
 }
 
+# Track: B.B. & Q. Bancd - Starlette (1981)
 data "spotify_track" "bbq_band" {
   url = "https://open.spotify.com/track/2LhBqodFdzWIGagvryATNW?si=14934deb51244e53"
 }
 
+# Track: Robyn - Robotboy (2005)
 data "spotify_track" "robyn" {
   url = "https://open.spotify.com/track/6n3v8Tmkj1G2sVHkUSq0b8?si=63b6702cf7d3456f"
+}
+
+# Track: Bananarama - Rough Justice (1984)
+data "spotify_track" "bananarama" {
+  url = "https://open.spotify.com/track/4dW0Xy4pIeY5jqskF3BKif?si=98865176029b4a56"
 }
 
 data "spotify_search_track" "by_kraftwerk" {
