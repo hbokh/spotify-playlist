@@ -2,9 +2,9 @@
 
 Create a playlist using various data sources, like `spotify_track` and `spotify_search_track`.
 
-The playlist consists some robot 🤖 related tracks, accompanied by eighties rarity tracks.
+The playlist starts with a Terraform track, holds some robot 🤖 related tracks and is accompanied by 80's rarity tracks.
 
-Spotify playlist: <https://open.spotify.com/playlist/0oRjEbePbpHsguBg00TdET>
+Spotify playlist URL: <https://open.spotify.com/playlist/0oRjEbePbpHsguBg00TdET>
 
 ## Set the API key
 
