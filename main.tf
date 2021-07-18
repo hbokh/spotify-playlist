@@ -19,6 +19,7 @@ resource "spotify_playlist" "playlist" {
 
   tracks = [
     data.spotify_track.siouxsie.id,
+    data.spotify_track.binny.id,
     data.spotify_track.aneka.id,
     data.spotify_track.hot_cold.id,
     data.spotify_track.lio.id,
@@ -40,6 +41,11 @@ data "spotify_track" "siouxsie" {
   spotify_id = "6jLmHKaHW6Cy37Gp5eTD3i"
   # The Spotify ID of a track can be taken from the track's URL.
   # url = "https://open.spotify.com/track/6jLmHKaHW6Cy37Gp5eTD3i?si=e6f23e76f11d4711"
+}
+
+# Track: Binny - Terraform (2014)
+data "spotify_track" "binny" {
+  spotify_id = "1X23QJUM5ZvBtszcO5YIHD"
 }
 
 # Track: Aneka - Japanese Boy (1981)
