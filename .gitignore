@@ -5,11 +5,8 @@
 *.tfstate
 *.tfstate.*
 
+# Terraform lock files
 .terraform.lock.hcl
-
-# These will contain secrets, so DO NOT commit!!
-/terraform.tfvars*
-*/*/terraform.tfvars
 
 # Crash log files
 crash.log
@@ -19,6 +16,8 @@ crash.log
 # version control.
 #
 # example.tfvars
+/terraform.tfvars*
+*/*/terraform.tfvars
 
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
@@ -34,4 +33,5 @@ override.tf.json
 # Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
 # example: *tfplan*
 
+# Docker environment variables
 .env

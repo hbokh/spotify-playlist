@@ -1,8 +1,8 @@
 # Spotify Playlist with Terraform
 
-Create a playlist using various provided options, like `spotify_track` and `spotify_search_track`.
+Create a playlist using various data sources, like `spotify_track` and `spotify_search_track`.
 
-I've added some robot 🤖 related tracks, accompanied by eighties rarity tracks.
+The playlist consists some robot 🤖 related tracks, accompanied by eighties rarity tracks.
 
 Spotify playlist: <https://open.spotify.com/playlist/0oRjEbePbpHsguBg00TdET>
 
@@ -12,4 +12,4 @@ Remember to set / replace the `spotify_api_key` in file `terraform.tfvars` **eve
 
 ## Reference
 
- HashiCorp Learn - [Create a Spotify Playlist with Terraform](https://learn.hashicorp.com/tutorials/terraform/spotify-playlist>).
+ HashiCorp Learn - [Create a Spotify Playlist with Terraform](https://learn.hashicorp.com/tutorials/terraform/spotify-playlist).
