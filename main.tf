@@ -2,7 +2,7 @@ terraform {
   required_version = ">= 1.0"
   required_providers {
     spotify = {
-      version = "~> 0.1.5"
+      version = "~> 0.2.0"
       source  = "conradludgate/spotify"
     }
   }
